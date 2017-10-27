@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Profile from './components/Profile/Profile';
-
+import GoogleMaps from './components/Map/Map';
+import '../main.css';
 
 class App extends React.Component {
   constructor() {
@@ -29,7 +30,7 @@ class App extends React.Component {
     }
     return (
       <div>
-        <div>Here will be google maps</div>
+        <GoogleMaps />
         <div>Here will be list of venues</div>
       </div>
     )
@@ -37,7 +38,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='page'>
         <Profile
           onSignIn={() => this.onSignIn()}
           onSignOut={() => this.onSignOut()}
