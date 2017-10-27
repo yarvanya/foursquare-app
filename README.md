@@ -20,6 +20,8 @@ Next follow this commands:
 
   git clone https://github.com/yarvanya/foursquare-app.git
 
+  cd foursquare-app
+
   npm install
 
   npm run start
