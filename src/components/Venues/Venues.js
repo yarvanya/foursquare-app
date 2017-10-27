@@ -1,12 +1,15 @@
 import React from 'react';
+import {CSVLink} from 'react-csv';
 import './venues.css';
 
-class Vanues extends React.Component {
+class Venues extends React.Component {
   render() {
+
     const list = this.props.venues.map((venue, i) => {
       return (
         <tr>
-          <td key={i}><li>{venue.name}</li></td>
+          <td key={i}>{i+1}</td>
+          <td>{venue.name}</td>
           <td>{venue.location.city}</td>
           <td>{venue.location.address}</td>
           <td>{venue.location.lat}</td>
@@ -15,11 +18,26 @@ class Vanues extends React.Component {
       )
     })
 
+    const csvData = this.props.venues.map((venue, i) => {
+      return [
+        [i+1],
+        [venue.name],
+        [venue.location.city],
+        [venue.location.address],
+        [venue.location.lat],
+        [venue.location.lng]
+      ];
+    })
+
     return (
-      <div className="containerForVenues">
-        <h2>All found venues in Tokyo city</h2>
+      <div>
+        <div>
+          <h1 className="venuesHeading">All found venues in Tokyo city:</h1>
+          <CSVLink className='exportCSVbutton' data={csvData} >Export CSV</CSVLink>
+        </div>
         <table className="venues">
           <tr>
+            <th>P/p</th>
             <th>Name</th>
             <th>City</th>
             <th>Address</th>
@@ -33,4 +51,4 @@ class Vanues extends React.Component {
   }
 }
 
-export default Vanues;
+export default Venues;
