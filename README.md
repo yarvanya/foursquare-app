@@ -1,6 +1,6 @@
 # foursquare-app
 
-# Foursqure API App
+## Foursqure API App
 Front End
 
 This is the Front End part of project "foursquare-app".
@@ -13,18 +13,18 @@ Secondarily, it's for collecting points, prize "badges," and eventually, coupons
 
 And it's becoming popular. Foursquare now has almost 275,000 users in less than a year.
 
-To start it on your computer you should have node v6.9.4 or upper
+###To start it on your computer you should have node v6.9.4 or upper
 installed globally.
 
-Next follow this commands:
+####Next follow this commands:
 
-  git clone https://github.com/yarvanya/foursquare-app.git
+  - git clone https://github.com/yarvanya/foursquare-app.git
 
-  cd foursquare-app
+  - cd foursquare-app
 
-  npm install
+  - npm install
 
-  npm run start
+  - npm run start
 
 Back end part of project maybe will be implemented in the future. :)
 
