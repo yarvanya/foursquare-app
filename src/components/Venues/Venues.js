@@ -18,7 +18,7 @@ class Vanues extends React.Component {
     return (
       <div className="containerForVenues">
         <h2>All found venues in Tokyo city</h2>
-        <table className="customers">
+        <table className="venues">
           <tr>
             <th>Name</th>
             <th>City</th>
