@@ -4,3 +4,21 @@
   margin: 0 auto;
   background-color: #E6E6E6;
 }
+
+.inputElememt, select {
+  font-size: 22px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form {
+  border-radius: 10px;
+  background-color: #CBE6A3;
+  padding: 20px;
+  margin: 10px 30px;
+}
