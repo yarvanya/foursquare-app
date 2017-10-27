@@ -25,6 +25,8 @@ And it's becoming popular. Foursquare now has almost 275,000 users in less than 
   - npm install
 
   - npm run start
+  
+  - visit http://localhost:3000/
 
 Back end part of project maybe will be implemented in the future. :)
 
