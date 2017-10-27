@@ -1,22 +1,46 @@
 .venues {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .venues td, .venues th {
-    border: 1px solid #ddd;
-    padding: 8px;
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.venues tr:nth-child(even){background-color: #f2f2f2;}
+.venues tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-.venues tr:hover {background-color: #ddd;}
+.venues tr:hover {
+  background-color: #ddd;
+}
 
 .venues th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.exportCSVbutton {
+  background-color: #D14836;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  float: right;
+}
+
+.venuesHeading {
+  display: inline-block;
+  font-size: 30px;
+  color: #D14836;
+  float: left;
+  padding-left: 50px;
+  font-weight: bold;
 }
