@@ -1,9 +1,9 @@
 # foursquare-app
 
-# Foursuqre API App
+# Foursqure API App
 Front End
 
-This is a Front End part of project "foursquare-app".
+This is the Front End part of project "foursquare-app".
 This service will help people to find their venues in favorite cities.
 
 # About Foursquare API globally:
