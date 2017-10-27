@@ -24,7 +24,6 @@ class Profile extends React.Component {
     }
   }
 
-
   signOut = (response) => {
     const onSignOut = this.props.onSignOut;
     if (onSignOut) {
@@ -41,7 +40,6 @@ class Profile extends React.Component {
           clientId="482936635819-kfr4pl8qjvo7nd957ho6dn3et224jbjk.apps.googleusercontent.com"
           buttonText="Login with Google"
           onSuccess={this.signIn}
-          /*onFailure={this.signIn}*/
         />}
         {isLoggedIn &&
         <div>
