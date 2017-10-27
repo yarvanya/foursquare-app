@@ -5,3 +5,10 @@
   padding: 25px;
   border: 1px solid black;
 }
+
+.drawnMarker {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #3F51B5;
+}
