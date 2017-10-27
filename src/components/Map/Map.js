@@ -5,7 +5,7 @@ import './map.css';
 
 const Marker = () => (
   <div className="drawnMarker"></div>
-)
+);
 
 const API = {
   KEY_GOOGLE: 'AIzaSyBEf_H_vpLcCgnZT2Z_EQ4eGiq5THzGz1k',
@@ -13,7 +13,7 @@ const API = {
 };
 
 const MAPDATA = {
-  ZOOM: 12,
+  ZOOM: 15,
   LAT: 35.6895000,
   LNG: 139.6917100
 };
@@ -22,8 +22,6 @@ const mapConfig = {
   center: [MAPDATA.LAT, MAPDATA.LNG],
   zoom: MAPDATA.ZOOM
 };
-
-    
 
 class Maps extends React.Component {
   render() {
@@ -40,15 +38,17 @@ class Maps extends React.Component {
 
     return (
       <div className="mapContainer">
-        <GoogleMapReact       
-          defaultCenter={mapConfig.center}
-          defaultZoom={mapConfig.zoom}
-          bootstrapURLKeys={{
-            key: API.KEY_GOOGLE,
-            language: API.LANGUAGE
-          }}>
-          { markers }
-        </GoogleMapReact>
+        <div className="mapElement">
+          <GoogleMapReact     
+            defaultCenter={mapConfig.center}
+            defaultZoom={mapConfig.zoom}
+            bootstrapURLKeys={{
+              key: API.KEY_GOOGLE,
+              language: API.LANGUAGE
+            }}>
+            { markers }
+          </GoogleMapReact>
+        </div>
       </div>
     );
   }
