@@ -27,3 +27,5 @@ Next follow this commands:
   npm run start
 
 Back end part of project maybe will be implemented in the future. :)
+
+Created by Ivan Yarymovych.
