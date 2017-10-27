@@ -2,6 +2,11 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import './map.css';
 
+
+const Marker = () => (
+  <div className="drawnMarker"></div>
+)
+
 const API = {
   KEY_GOOGLE: 'AIzaSyBEf_H_vpLcCgnZT2Z_EQ4eGiq5THzGz1k',
   LANGUAGE: 'en'
@@ -18,8 +23,21 @@ const mapConfig = {
   zoom: MAPDATA.ZOOM
 };
 
+    
+
 class Maps extends React.Component {
   render() {
+
+    const markers = this.props.venues.map((venue, i) => {
+      const marker = {
+        position: {
+          lat: venue.location.lat,
+          lng: venue.location.lng
+        }
+      }
+      return <Marker key={i} lat={marker.position.lat} lng={marker.position.lng} />
+    });
+
     return (
       <div className="mapContainer">
         <GoogleMapReact       
@@ -29,6 +47,7 @@ class Maps extends React.Component {
             key: API.KEY_GOOGLE,
             language: API.LANGUAGE
           }}>
+          { markers }
         </GoogleMapReact>
       </div>
     );
