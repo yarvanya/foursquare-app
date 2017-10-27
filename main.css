@@ -1,6 +1,5 @@
 .page {
-  border: 3px solid black;
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
   background-color: #E6E6E6;
 }
@@ -21,4 +20,5 @@
   background-color: #CBE6A3;
   padding: 20px;
   margin: 10px 30px;
+  clear: left;
 }
