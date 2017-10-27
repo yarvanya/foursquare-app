@@ -14,7 +14,7 @@ Secondarily, it's for collecting points, prize "badges," and eventually, coupons
 And it's becoming popular. Foursquare now has almost 275,000 users in less than a year.
 
 ### To start it on your computer you should have node v6.9.4 or upper
-installed globally.
+### installed globally.
 
 #### Next follow this commands:
 
